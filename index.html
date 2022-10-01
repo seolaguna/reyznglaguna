@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reyz ng Laguna</title>
+  <meta name="description" content="Reyz works in Laguna">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://businessdiary.site/wp-content/uploads/2022/09/favicon.jpg">
+  <meta name="google-site-verification" content="1UxI-Nn4nXtxoVlCG6yFEkwZXqrZphgg61vzAXfMK_4" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 100vh;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+    }
+    main {
+      width: 100%;
+      height: 100%;
+      
+      display: flex;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #bg_img {
+      width: 100%;
+      height: 100%;
+      position:fixed;
+      top:0;
+      left: 0;
+      background: url('bg.jpg');
+      background-size: calc(100% + 200px) calc(100% + 200px) !important;
+      background-repeat: no-repeat !important;
+    }
+
+    main::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background-color: rgba(0,0,0,0.2);
+      z-index: 1;
+      
+    }
+
+    .content_wrapper {
+      position: relative;
+      z-index: 10;
+    }
+
+    .img_wrapper {
+      margin: 0 auto;
+      width: 200px;
+      height: 200px;
+      border-radius: 100%;
+      padding: 10px;
+      background: rgba(255,255,255,0.5);
+      -webkit-backdrop-filter: blur(20px);
+      backdrop-filter: blur(20px);
+      margin-bottom: 1rem;
+    }
+    .img_wrapper img {
+      -webkit-filter: blur(20px);
+      filter: blur(20px);
+      border-radius: 100%;
+      display: block;
+      transition: all .3s ease-in-out;
+    }
+
+    .img_wrapper img:hover {
+      -webkit-filter: blur(0);
+      filter: blur(0);
+    }
+
+    .content {
+      text-align: center;
+    }
+
+    .name {
+      font-family: 'Oswald', sans-serif;
+      font-weight: 600;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 60px;
+      line-height: 1em;
+      text-align: center;
+      letter-spacing: 3px;
+    }
+    
+    .line {
+      width: 144px;
+      height: 1px;
+      background: rgba(255,255,255,0.5);
+      margin: 10px auto;
+    }
+    .small {
+      font-size: 30px;
+      text-transform: uppercase;
+      text-align: center;
+      color: #fff;
+    }
+    .links {
+      margin-top: 1rem;
+      color: #fff;
+      text-transform: uppercase;
+      font-size: 18px;
+      padding: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    a {
+      border: 1px solid #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      font-family: 'Oswald', sans-serif;
+      font-weight: 600;
+      color: #fff;
+      transition: all .3s ease-in-out;
+
+      
+    }
+
+    a.reverse {
+      color: #1a1a1a;
+      background: rgba(255,255,255,0.5);
+      -webkit-backdrop-filter: blur(5px);
+      backdrop-filter: blur(5px);
+      border: 1px solid rgba(255,255,255,0.25);
+    }
+
+    a:hover {
+      background: #fff;
+      color: #1a1a1a;
+    }
+
+    #tag-line {
+      margin: 5px 0;
+      font-size: 24px;
+      color: #fff;
+      font-family: 'Oswald', sans-serif;
+      text-transform: uppercase;
+    }
+  </style>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body id="bud">
+  <main>
+    <div id="bg_img"></div>
+    <div class="content_wrapper">
+      <div class="img_wrapper" data-aos="fade-up" data-aos-delay="200">
+        <img src="reyz.jpg" alt="Reyz ng Laguna" width="200px" height="200px">
+      </div>
+      <div class="content">
+        <div class="name" data-aos="fade-up" data-aos-delay="300">REYZ</div>
+        <div class="line" data-aos="fade-up" data-aos-delay="400"></div>
+        <div class="small" data-aos="fade-up" data-aos-delay="500">ng Laguna</div>
+        <div id="tag-line" data-aos="fade-up" data-aos-delay="600"></div>
+        <div class="links" data-aos="fade-up" data-aos-delay="800">
+          <a href="https://goo.gl/maps/ioKMv2ayyW7KSZVR7" class="reverse" target="_blank">Visit Me</a>
+          <a href="https://t.me/reyz1117" target="_blank">Chat Me</a>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+<script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+
+  new TypeIt("#tag-line", {
+    strings: "Mataas tumalon! Malalim bumaon!",
+    speed: 75,
+    loop: true,
+    waitUntilVisible: true,
+    startDelay: 1000,
+  }).go();
+
+    let movementStrength = 25;
+    let height = movementStrength / window.outerHeight;
+    let width = movementStrength / window.outerWidth;
+    const el = document.querySelector("#bud");
+    const bg = document.querySelector("#bg_img");
+    el.addEventListener("mousemove", (e) => {
+      let pageX = e.pageX - (window.outerWidth / 2);
+      let pageY = e.pageY - (window.outerHeight / 2);
+      let newvalueX = width * pageX * -1 - 25;
+      let newvalueY = height * pageY * -1 - 50;
+      bg.style.backgroundPositionX = newvalueX + "px";
+      bg.style.backgroundPositionY = newvalueY + "px";
+    });
+</script>
+</html>
